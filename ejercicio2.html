@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Output en JS</title>
+</head>
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarAlerta()">Mostrar mi nombre</button>
+
+    <br><br>
+
+    <p id="mensaje"></p>
+    <button onclick="actualizarMensaje()">Actualizar párrafo</button>
+
+    <script>
+        // Mensaje en consola al cargar la página
+        console.log("La página se ha cargado correctamente.");
+
+        function mostrarAlerta() {
+            alert("Tu Nombre Aquí"); // Sustituye por tu nombre real
+        }
+
+        function actualizarMensaje() {
+            document.getElementById("mensaje").innerText = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</body>
+</html>
